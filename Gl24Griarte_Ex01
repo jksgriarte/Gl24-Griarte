@@ -1,0 +1,39 @@
+package gl24.griarte_ex01;
+
+
+public class Gl24Griarte_Ex01 {
+
+    public static void main(String[] args) {
+        
+        //Student variable declarations
+       String student1, student2, student3;
+       student1 = "Adrian"; student2 = "Bernadette"; student3 = "Cassie";
+       
+       //Grades variable declaration
+       double stud1Grade, stud2Grade, stud3Grade;
+       stud1Grade = 87.45; stud2Grade = 94.68; stud3Grade = 91.23;
+       
+       //Grade Letter variable declaration
+       char stud1LGrade, stud2LGrade, stud3LGrade;
+       stud1LGrade = 'B' ; stud2LGrade = 'A' ; stud3LGrade = 'A';
+       
+       //Print Student 1 info
+       System.out.println("Student 1\nName: " + student1 + "\nGrades: " + stud1Grade
+       + "\nLetter Grading: " + stud1LGrade);
+       
+       //Print Student 2 info
+       System.out.println("\nStudent 2\nName: " + student2 + "\nGrades: " + stud2Grade
+       + "\nLetter Grading: " + stud2LGrade);
+       
+       //Print Student 3 info
+       System.out.println("\nStudent 3\nName: " + student3 + "\nGrades: " + stud3Grade
+       + "\nLetter Grading: " + stud3LGrade);
+       
+       //Operations
+       System.out.println("\nAre the grades of " + student1 + " higher than that of " + student2 + "?: " + (stud1Grade > stud2Grade)
+       + "\nWhat is the average of the three students' grades?: " + (stud1Grade + stud2Grade + stud3Grade)/3
+       + "\nDo " + student2 + " and " + student3 + " have the same grade letter equivalent?: " + (stud3LGrade==stud2LGrade));
+       
+    }
+    
+}
