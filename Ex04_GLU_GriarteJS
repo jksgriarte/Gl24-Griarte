@@ -1,0 +1,52 @@
+//Ex04_GLU_GriarteJS.java
+package ex04_glu_griartejs;
+
+import java.util.Scanner;
+
+public class Ex04_GLU_GriarteJS {
+
+    public static void main(String[] args) {
+        //variable declarations
+        boolean keepPlaying = true;
+        boolean keepChoosing = true;
+        
+        //scanner instantation
+        Scanner sc = new Scanner(System.in);
+        
+       //beginning of program
+       do{
+           //main menu choice loop
+           do{
+            System.out.println("Welcome to Rock, Paper, Scissors. Please choose an option:\n" +
+                                "A. Start game\n" +
+                                "B. Change number of rounds\n" +
+                                "C. Exit application");
+            String mainMenuChoice = sc.next();
+            //using strings for this loop instead of char because char cannot be dereferenced
+            if(mainMenuChoice.equalsIgnoreCase("A")){
+            //case A, break the main menu choice loop?
+            }
+            else if(mainMenuChoice.equalsIgnoreCase("B")){
+            //case B, variable round number change
+            }
+            else if(mainMenuChoice.equalsIgnoreCase("C")){
+            //case C
+            }
+            else{
+            //don't change the variable that breaks the print loop
+            }
+            }
+           while(keepChoosing==true);
+           
+           
+           //loop which starts the game
+           /*
+           if
+           */
+           // if keepPlaying==false, then break loop
+           
+       }
+       while(keepPlaying==true);
+    }
+    
+}
