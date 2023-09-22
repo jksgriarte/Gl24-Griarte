@@ -1,4 +1,7 @@
+//Ex04_Glu_GriarteJS
 package ex04_glu_griartejs;
+
+import java.util.Scanner;
 
 public class RockPaperScissors{
 	public static void main(String[] args){
@@ -11,7 +14,48 @@ public class RockPaperScissors{
 		scissors.setStrongAgainst(paper);
 		
 		int roundsToWin = 2;
+		//scanner instantiation
+		Scanner sc = new Scanner(System.in);
+
+		//variable declaration
+		boolean keepPlaying = true;
+		String continueSetting = "Y";
+		String mainMenuChoice;
+
+		do{
+		System.out.println("Welcome to Rock, Paper, Scissors. Please choose an option:"
+				+	"\na) Start game"
+				+	"\nb) Change number of rounds"
+				+	"\nc) Exit application");
+		mainMenuChoice = sc.nextLine();
+		if(mainMenuChoice.equalsIgnoreCase("A")){
+		//game
 		
+		}
+		else if(){
+		//change round number
+			do{
+			System.out.println("The current number of rounds is: " + roundsToWin + "\nPlease input the amount of rounds you wuould like to have.");
+			roundsToWin = sc.nextInt();
+			System.out.println("The number of rounds to win is now: " + roundsToWin + ".\nWould you like to return to the main menu? (Y/N)");
+			//for loop to continue setting unless y n and nothing else
+			continueSetting = sc.nextLine();
+			if(){
+			}
+			}
+			while(continueSetting.equalsIgnoreCase("A"))
+		}
+		else if(){
+		//exit
+		mainMenuChoice = false;
+		
+		}
+		else{
+		//replay loop
+		break;
+		}
+
+		while(keepPlaying==true)
 		
 	}
 }
